@@ -1,0 +1,195 @@
+\documentclass[12pt]{article}
+
+\usepackage[OT1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{graphicx}
+\usepackage{vmargin}
+\usepackage{amssymb}
+
+\textheight 25cm
+\textwidth 17cm
+%\setlength{\textheight}{26cm}
+%\setlength{\textwidth}{17cm}
+\oddsidemargin 0cm
+\evensidemargin 0cm
+\topmargin 0cm
+\hoffset -3mm
+\voffset -20mm
+%\setlength{\headheight}{4pt}
+%\setlength{\headsep}{0.5cm}
+
+\newtheorem{defin}{Definition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{remark}{Remark}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+
+\newcommand \noi \noindent
+\newcommand{\ind}{{{\large 1} \hspace*{-1.6mm} {\large 1}}}
+\newcommand{\dsp}{\displaystyle}
+
+\newcommand{\R}{\texttt{R}}
+\newcommand{\MF}{{\mathcal F}}
+
+\def \RR {\mbox{I \hskip -0.55 em R}}
+
+\begin{document}
+
+\noi {\bf Ensimag $2^{\footnotesize \mbox{nd}}$ year}  \hfill {\bf
+Statistical Analysis and Document Mining}
+
+\noi {\bf MSIAM $1^{\footnotesize \mbox{st}}$ year}
+
+\vspace{8mm}
+
+\begin{center}
+{\bf Worksheet $\mbox{n}^{\circ}$1} 
+\end{center}
+
+\pagestyle{empty}
+
+\vspace{8mm}
+
+\noi{\bf Exercise 1}. Let $U$ and $V$ be two independent random variables with distribution uniform over $[0,1]$. Let $X = U+V$ and $Y=U-V$. 
+
+\begin{enumerate}
+
+\item Compute the expectation and covariance matrix of $Z = \left( \begin{array}{c} X \\ Y\end{array} \right)$. %$Z = (X, Y)^T$.
+
+\vspace{1mm}
+
+\item Prove that $X$ and $Y$ are uncorrelated but not independent.
+
+\end{enumerate}
+
+\vspace{3mm}
+
+\noi {\it Indications}. Recall that the variance of the uniform distribution is $1/12$. Compute $E[X]$, $E[Y]$, $Var[X]$, $Var[Y]$ and $Cov(X,Y)$.  The solution is $E[Z] = \left( \begin{array}{c} 1 \\ 0\end{array} \right)$ and  $K_Z= \left( \begin{array}{cc} 1/6 &0\\ 0 &1/6\end{array} \right)$. $X$ and $Y$ are uncorrelated but not independent. It is possible because the vector is not Gaussian.
+
+
+\vspace{8mm}
+
+\noi{\bf Exercise 2}. Let $X$ be a random vector in $\RR^n$ and $A$ be a deterministic $m \times n$ matrix. 
+
+\begin{enumerate}
+
+\item Prove that $K_X = E \left[ (X - E[X]) (X - E[X])^T \right] = E[X X^T] - E[X] E[X]^T$.
+
+\vspace{1mm}
+
+\item Prove that $K_{AX} = A K_X A^T$.
+
+\vspace{1mm}
+
+\item Use 2. to derive again the result of exercise 1.
+
+\end{enumerate}
+
+\vspace{3mm}
+
+\noi {\it Indications}. For 1 and 2, this is just a manipulation of vectors and matrices. For 3, write 
+$Z = \left( \begin{array}{cc} 1 &1\\ 1 &-1\end{array} \right) \, \left( \begin{array}{c} U \\ V\end{array} \right)$
+
+
+\vspace{8mm}
+
+\noi{\bf Exercise 3}. Let $Z = \left( \begin{array}{c} X \\ Y\end{array} \right)$ be a Gaussian vector with mean $\mu = \left( \begin{array}{c} 1 \\ 2\end{array} \right)$ and covariance matrix $\Sigma = \left( \begin{array}{cc} 1 &-1\\ -1 &2\end{array} \right)$.
+
+\begin{enumerate}
+
+\item Compute the density of this distribution.
+
+\vspace{1mm}
+
+\item Using $f_{Y|X=x}(y) = {\dsp \frac{f_{(X,Y)}(x,y)}{f_{X}(x)}}$, compute the distribution of $Y$ given $X=x$.
+
+\vspace{1mm}
+
+\item What is the best prediction of $Y$ given $X=x$?
+
+\end{enumerate}
+
+\vspace{3mm}
+
+\noi {\it Indications}. 
+
+\begin{enumerate}
+
+\item Use the general formula of the density of a Gaussian vector.
+$$f_{(X,Y)}(x,y)=\frac{1}{2\pi}
+\exp\left[-\frac{1}{2} (2 x^2 + y^2 + 2xy - 8x - 6y +10)\right]$$
+
+\vspace{1mm}
+
+\item $f_{Y|X=x}(y) = {\dsp \frac{1}{\sqrt{2\pi}} \exp\left[-\frac{1}{2} (y - (3-x)^2)\right]}$ so the distribution of $Y$ given $X=x$ is ${\cal N}(3-x,1)$.
+
+\vspace{1mm}
+
+\item The best prediction of $Y$ given $X=x$ is $3-x$. 
+
+\end{enumerate}
+
+
+\vspace{8mm}
+
+\noi{\bf Exercise 4}. Let $X$ be a random variable in $L^2 = \left\{ X; E[X^2] < + \infty \right\}$. By definition, the best approximation of $X$ by a constant is the orthogonal projection of $X$ on the space $D$ of constant random variables. Prove that this best approximation is $E[X]$.
+
+\vspace{3mm}
+
+\noi {\it Indications}. The orthogonal projection of $X$ on $D$ is the constant $b$ such that $\left\|X - b\right\|^2 = \min_{a \in D} \left\|X-a\right\|^2$. $\left\|X-a\right\|^2 = Var[X] + (E[X]-a)^2$, so this norm is minimal for $a=E[X]$. The last formula can be written $\left\|X-a\right\|^2 = \left\|X-E[X]\right\|^2 + \left\|E[X]-a\right\|^2$, which is the Pythagorean theorem applied to the triangle $(X, E[X], a)$.
+
+
+
+\vspace{8mm}
+
+\noi{\bf Exercise 5}. Let $\left( \begin{array}{c} X \\ Y\end{array} \right)$ be a Gaussian vector in $\RR^2$. Let $Z = Y - E[Y] - {\dsp \frac{Cov(X,Y)}{Var[X]}} \left[X - E[X]\right]$.
+
+
+\begin{enumerate}
+
+\item Compute $E[Z]$ and $Var[Z]$.
+
+\vspace{1mm}
+
+\item Prove that $X$ and $Z$ are independent.
+
+\vspace{1mm}
+
+\item Derive the distribution of $Y$ given $X=x$.
+
+\vspace{1mm}
+
+\item Use 3. to derive again the result of exercise 3.
+
+\end{enumerate}
+
+\vspace{3mm}
+
+\noi {\it Indications}. 
+
+\begin{enumerate}
+
+\item $E[Z] = 0$ and $Var[Z] = Var[Y] - {\dsp \frac{Cov(X,Y)^2}{Var[X]}}$.
+
+\vspace{1mm}
+
+\item $\left( \begin{array}{c} X \\ Z\end{array} \right)$ is a linear transform of $\left( \begin{array}{c} X \\ Y\end{array} \right)$, so it is also a Gaussian vector. $Cov(X,Z) = 0$, so $X$ and $Z$ are independent.
+
+\vspace{1mm}
+
+\item The distribution of $Y$ given $X=x$ can be derived from that of $Z$ given $X=x$ by a translation. The distribution of $Z$ given $X=x$ is the distribution of $Z$. Finally, the distribution of $Y$ given $X=x$ is normal with mean $E[Y] + {\dsp \frac{Cov(X,Y)}{Var[X]}} \left[x - E[X]\right]$ and variance $Var[Y] - {\dsp \frac{Cov(X,Y)^2}{Var[X]}}$.  For Gaussian vectors, the best prediction of $Y$ given $X=x$ is affine.
+
+\vspace{1mm}
+
+\item In the case of exercise 3, the mean and variance are $3-x$ and $1$.
+
+\end{enumerate}
+
+
+
+\end{document}
+
+
+
+

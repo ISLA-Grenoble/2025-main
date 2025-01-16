@@ -1,0 +1,89 @@
+---
+# title: "Template Work/labsheet"
+# author: "Christophe Dutang, Pedro Rodrigues"
+documentclass: article
+papersize: a4
+geometry: top=1.5cm, bottom=2cm, left=1.5cm, right=1.5cm
+fontsize: 11pt
+output: 
+  pdf_document:
+    extra_dependencies: ["enumitem"]
+    number_sections: true
+    toc: false
+    keep_tex: false
+    includes:
+      in_header: "TD1-preamble.tex"
+      before_body: "TD1-header.tex"
+      
+---
+
+<!-- see help at https://bookdown.org/yihui/rmarkdown-cookbook/latex-output.html -->
+
+```{r setup, include=FALSE, message=FALSE}
+#see full list >knitr::opts_chunk$get()
+knitr::opts_chunk$set(echo = TRUE, fig.align="center")
+```
+
+\section*{$\blacktriangleright$~Exercise 1}
+
+Let $U$ and $V$ be two independent random variables with uniform distribution
+over $[0,1]$. 
+
+Let $X = U+V$ and $Y=U-V$. 
+
+\begin{enumerate}
+\item[(a)] Compute the expectation and covariance matrix of $Z = \left( 
+\begin{array}{cc} X & Y\end{array} \right)^T$. %$Z = (X, Y)^T$.
+\item[(b)] Prove that $X$ and $Y$ are uncorrelated but not independent.
+\end{enumerate}
+
+<!---------------------------------------------------------------------------->
+
+\section*{$\blacktriangleright$~Exercise 2}
+
+Let $Z = \left( \begin{array}{cc} X & Y\end{array} \right)^T$ be a Gaussian
+vector with mean $\mu = \left( \begin{array}{cc} 1 & 2\end{array} \right)^T$ 
+and covariance $\Sigma = \left( \begin{array}{cc} 1 &-1\\ -1 &2\end{array} 
+\right)$.
+
+\begin{enumerate}
+\item[(a)] Compute the probability density function of $Z$.
+\item[(b)] Using $$f_{Y|X=x}(y) = {\frac{f_{(X,Y)}(x,y)}{f_{X}(x)}}$$ compute
+the distribution of $Y$ given $X=x$.
+\item[(c)] What is the best prediction of $Y$ given $X=x$?
+\end{enumerate}
+
+<!---------------------------------------------------------------------------->
+
+\section*{$\blacktriangleright$~Exercise 3}
+
+Consider the regression problem discussed in class: we want to determine a 
+function $\mu$ that takes a predictor $X$ as input and gives the best estimate
+in terms of mean squared error for the observed variable $Y$. 
+
+In mathematical terms, we have an optimization problem defined as
+$$
+\mu = \underset{f \in \mathcal{F}}{\text{argmin}}~\mathbb{E}_{(X, Y)}\Big[\Big(Y - f(X)\Big)^2\Big]
+$$
+where $\mathcal{F}$ is a space of functions with finite squared norm.
+
+Show that the solution is $\mu(x) = \mathbb{E}_{Y \mid X}\Big[Y \mid X = x\Big]$
+<!---------------------------------------------------------------------------->
+
+\section*{$\blacktriangleright$~Exercise 4}
+Consider the Gaussian simple linear regression model presented in class
+$$
+Y = \beta_0 + \beta_1 X_1 + \varepsilon \quad \text{with} \quad \varepsilon \sim \mathcal{N}(0, \sigma^2)
+$$
+The estimates for the parameters of the model, $\hat{\beta}_0$ and $\hat{\beta}_1$, are obtained $N$ paired samples $(x_i, y_i)$.
+\begin{enumerate}
+\item[(a)] Show that the estimated parameters are unbiased.
+\item[(b)] Show that $$\text{Var}(\hat{\beta}_1) = \dfrac{\sigma^2}{N}~\dfrac{1}{s_X^2} \quad \text{and} \quad \text{Var}(\hat{\beta_0}) = \dfrac{\sigma^2}{N}\left(1+\dfrac{\bar{X}^2}{s_X^2}\right)$$
+where $\bar{X} = \dfrac{1}{N}\displaystyle\sum_{i = 1}^N x_i$ and $s_X^2 = \dfrac{1}{N}\displaystyle\sum_{i = 1}^N (x_i - \bar{X})^2$.
+\end{enumerate}
+Using the estimated parameters, we can predict that for a given arbitrary value of $X$, say $x$ (sometimes called the operation point), we have that on average $Y$ will be $$\hat{m}(x) = \hat{\beta}_0 + \hat{\beta}_1 x$$ 
+\begin{enumerate}
+\item[(c)] Show that 
+$$\mathbb{E}\Big[\hat{m}(x)\Big] = \beta_0 + \beta_1 x$$
+\item[(d)] Show that $$\text{Var}\Big(\hat{m}(x)\Big) = \dfrac{\sigma^2}{N}\left(1 + \dfrac{(x - \bar{X})^2}{s_X^2}\right)$$Describe how the variance changes for different choices of the operation point.
+\end{enumerate}

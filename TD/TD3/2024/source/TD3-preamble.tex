@@ -1,0 +1,202 @@
+%*********************************************************
+%useful packages
+
+%symbole math de l'American Mathematical Society (AMS)
+\usepackage{amsfonts,amssymb,amsmath,amsthm}
+%graphique
+\usepackage{color, graphicx, wrapfig, subcaption}
+%lang
+\usepackage[english]{babel}
+%encoding
+\usepackage[utf8]{inputenc} %UNIX encoding
+%multirow/col tabular
+\usepackage{multirow, multicol}
+%reference hypertext
+\usepackage[colorlinks=true, citecolor=cyan, urlcolor=blue, linkcolor=black]{hyperref}
+
+
+
+%*********************************************************
+% les macros generales
+
+%layout
+\newcommand{\HRuleTop}{\noindent\rule{\linewidth}{.5pt}\vspace{-0.75em}}
+\newcommand{\HRuleBottom}{\vspace{-1em}\rule{\linewidth}{.5pt}}
+\newcommand{\ligne}{\rule[2mm]{.3\textwidth}{0,5mm}\\}
+
+%sets
+\newcommand{\R}{\mathbb R}
+\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\X}{\mathbb X}
+\newcommand{\C}{\mathbb C}
+\newcommand{\K}{\mathbb K}
+\newcommand{\T}{\mathbb T}
+\renewcommand{\P}{\mathbb P}
+\newcommand{\Q}{\mathbb Q}
+
+\newcommand{\Rnm}{\R^{n\times m}}
+\newcommand{\Cnm}{\C^{n\times m}}
+\newcommand{\Knm}{\K^{n\times m}}
+\newcommand{\Kmn}{\K^{m\times n}}
+\newcommand{\Knn}{\K^{n\times n}}
+\newcommand{\Kmp}{\K^{m\times p}}
+
+\newcommand{\calA}{\mathcal A}
+\newcommand{\calB}{\mathcal B}
+\newcommand{\calC}{\mathcal C}
+\newcommand{\calD}{\mathcal D}
+\newcommand{\calE}{\mathcal E}
+\newcommand{\calF}{\mathcal F}
+\newcommand{\calG}{\mathcal G}
+\newcommand{\calI}{\mathcal I}
+\newcommand{\calL}{\mathcal L}
+\newcommand{\calP}{\mathcal P}
+\newcommand{\calN}{\mathcal N}
+\newcommand{\calM}{\mathcal M}
+\newcommand{\calS}{\mathcal S}
+\newcommand{\calT}{\mathcal T}
+\newcommand{\calU}{\mathcal U}
+\newcommand{\calX}{\mathcal X}
+
+\newcommand{\barA}{\overline A}
+\newcommand{\barV}{\overline V}
+
+\newcommand{\bA}{\boldsymbol{A}}
+\newcommand{\bB}{\boldsymbol{B}}
+\newcommand{\bC}{\boldsymbol{C}}
+\newcommand{\bD}{\boldsymbol{D}}
+\newcommand{\bF}{\boldsymbol{F}}
+\newcommand{\bH}{\boldsymbol{H}}
+\newcommand{\bL}{\boldsymbol{L}}
+\newcommand{\bM}{\boldsymbol{M}}
+\newcommand{\bN}{\boldsymbol{N}}
+\newcommand{\bP}{\boldsymbol{P}}
+\newcommand{\bQ}{\boldsymbol{Q}}
+\newcommand{\bR}{\boldsymbol{R}}
+\newcommand{\bT}{\boldsymbol{T}}
+\newcommand{\bU}{\boldsymbol{U}}
+\newcommand{\bX}{\boldsymbol{X}}
+
+\newcommand{\bzero}{\boldsymbol{0}}
+\newcommand{\bone}{\boldsymbol{1}}
+\newcommand{\ba}{\boldsymbol{a}}
+\newcommand{\bb}{\boldsymbol{b}}
+\newcommand{\be}{\boldsymbol{e}}
+\newcommand{\bff}{\boldsymbol{f}}
+\newcommand{\bk}{\boldsymbol{k}}
+\newcommand{\bI}{\boldsymbol{I}}
+\newcommand{\bt}{\boldsymbol{t}}
+\newcommand{\bu}{\boldsymbol{u}}
+\newcommand{\bx}{\boldsymbol{x}}
+\newcommand{\by}{\boldsymbol{y}}
+\newcommand{\bz}{\boldsymbol{z}}
+
+\newcommand{\tbu}{\tilde{B}^u}
+\newcommand{\tbl}{\tilde{B}^l}
+\newcommand{\tbm}{\tilde{B}^m}
+
+
+\newcommand{\ux}{\underline{x}}
+\newcommand{\ua}{\underline{a}}
+\newcommand{\ub}{\underline{b}}
+\newcommand{\uu}{\underline{u}}
+\newcommand{\uX}{\underline{X}}
+\newcommand{\uY}{\underline{Y}}
+
+
+
+%text style
+\newcommand{\pkg}{\textbf}
+\newcommand{\sigle}{\textsc}
+\newcommand{\code}{\texttt}
+\newcommand{\soft}{\textsf}
+\newcommand{\expo}{\textsuperscript}
+
+%colors
+\newcommand{\cyan}[1]{{\color{cyan}#1}}
+\newcommand{\red}[1]{{\color{red}#1}}
+\newcommand{\blue}[1]{{\color{blue}#1}}
+\newcommand{\orange}[1]{{\color{orange}#1}}
+\newcommand{\green}[1]{{\color{green}#1}}
+
+%math operator
+\newcommand{\abs}[1]{\left\lvert#1\right\rvert}
+\newcommand{\bigo}[1]{\mathcal O \hskip -0,2em \left(#1\right)}
+\DeclareMathOperator{\card}{Card}
+\DeclareMathOperator{\diag}{diag}
+\renewcommand{\det}[1]{\text{det}\left(#1\right)}
+\newcommand{\eqx}[1]{\underset{#1}{=}}
+\DeclareMathOperator{\erf}{erf}
+\DeclareMathOperator{\erfc}{erfc}
+\DeclareMathOperator{\Id}{Id}
+\newcommand{\II}{\mbox{\large 1\hskip -0,353em 1}}
+\newcommand{\ind}{1\!\!1}
+\newcommand{\iid}{\stackrel{\text{i.i.d.}}{\sim}}
+\newcommand{\id}{\stackrel{\text{i.d.}}{\sim}}
+\newcommand{\invn}{\frac{1}{n}}
+\DeclareMathOperator{\IM}{Im}
+\newcommand{\Jac}{\textrm{Jac\hskip+.1em}}
+\DeclareMathOperator{\Ker}{Ker}
+\newcommand{\littleo}[1]{o\hskip -0,2em \left(#1\right)}
+\DeclareMathOperator{\mat}{mat}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\DeclareMathOperator{\rg}{rg}
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\Sp}{Sp}
+\newcommand{\simx}[1]{\underset{#1}{\sim}}
+\newcommand{\lnL}{\log \mathcal{L}}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\vect}{vect}
+\newcommand{\ps}{\text{p.s.}}
+
+%expectation
+\newcommand{\esp}[1]{E\left[#1\right]}
+\newcommand{\espQ}[1]{E_\Q\left[#1\right]}
+\newcommand{\espP}[1]{E_\P\left[#1\right]}
+\newcommand{\espPQ}[1]{E_{\Q\otimes\P}\left[#1\right]}
+\newcommand{\var}[1]{Var\left[#1\right]}
+\newcommand{\cov}[1]{Cov\left[#1\right]}
+
+%integral
+\newcommand{\ioinf}{\int_0^{+\infty}}
+
+%limit
+\newcommand{\cvg}{\underset{n\rightarrow + \infty}{\longrightarrow} }
+\newcommand{\cvgx}{\underset{x\rightarrow + \infty}{\longrightarrow} }
+\newcommand{\cvgxwF}{\underset{x\rightarrow \omega(F)}{\longrightarrow} }
+\newcommand{\cvguwF}{\underset{u\rightarrow \omega(F)}{\longrightarrow} }
+\newcommand{\cvgt}{\underset{t\rightarrow + \infty}{\longrightarrow} }
+\newcommand{\cvgnonentwo}{\underset{n_1, n_2\rightarrow + \infty}{\longrightarrow} }
+\newcommand{\limu}{\underset{u\rightarrow + \infty}{\lim} }
+\newcommand{\limx}{\underset{x\rightarrow + \infty}{\lim} }
+\newcommand{\limn}{\underset{n\rightarrow + \infty}{\lim} }
+\newcommand{\limtp}{\underset{t\rightarrow + \infty}{\lim} }
+\newcommand{\limtm}{\underset{t\rightarrow - \infty}{\lim} }
+\newcommand{\limuzero}{\underset{u\rightarrow 0}{\lim} }
+\newcommand{\eqps}{\stackrel{\text{p.s.}}{=} }
+\newcommand{\cvgps}{\stackrel{\text{p.s.}}{\cvg} }
+\newcommand{\cvgloi}{\stackrel{\mathcal D}{\cvg} }
+\newcommand{\cvgloib}{\stackrel{\mathcal D}{\underset{m\rightarrow + \infty}{\longrightarrow} } }
+\newcommand{\cvgloinonentwo}{\stackrel{\mathcal D}{\cvgnonentwo} }
+\newcommand{\cvgprob}{\stackrel{\text{prob.}}{\cvg} }
+\newcommand{\cvgLsq}{\stackrel{L^2}{\cvg} }
+\newcommand{\cvgtps}{\stackrel{\text{p.s.}}{\cvgt} }
+
+
+%system
+\newcommand{\systL}{\left\{\begin{array}{ll}}
+\newcommand{\systR}{\end{array}\right.}
+\newcommand{\matL}{\left(\begin{matrix}}
+\newcommand{\matR}{\end{matrix}\right)}
+\newcommand{\detL}{\left|\begin{matrix}}
+\newcommand{\detR}{\end{matrix}\right|}
+\newcommand{\sachantL}{\left.}
+\newcommand{\sachantR}{\right|}
+
+%*********************************************************
+% macros Pedro
+
+\usepackage{sectsty}
+\sectionfont{\fontsize{12}{15}\selectfont}
+
