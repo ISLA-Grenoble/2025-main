@@ -28,7 +28,7 @@ The (initial) plan for the topics of each of our classes is the following:
 
 - **Week 3 (17-February 2025)**
   - CM3: Cross-validation, model selection, bias-variance tradeoff
-  - TP1: Regression -- **Deadline 23-February at 23h59**
+  - TP1: Regression -- **Deadline 09-March at 23h59**
 
 - **Week 4 (24-February 2025)**
   - CM4: Principal component analysis
@@ -48,7 +48,7 @@ The (initial) plan for the topics of each of our classes is the following:
   
 - **Week 8 (31-March 2025)**
   - CM8: Ensemble methods
-  - TP3: Benchmarking classification methods
+  - TP3: Benchmarking classification methods -- **Deadline 14-Avril at 23h59**
 
 - **Week 9.1 (07-April 2025)**
   - CM9: ML competitions, metrics, etc.
