@@ -8,8 +8,8 @@ df = pd.read_csv(filename, index_col=0)
 df['brand'] = df['brand'].astype("category")
 
 # encode the categorical features
-df_enc = pd.get_dummies(df, dtype=np.float64)
-df_enc = df_enc.drop(columns=['brand_A'])
+df_enc = pd.get_dummies(
+    df, dtype=np.float64, drop_first=True)
 
 # choose the predictors
 X = df_enc.drop(columns=['life'])

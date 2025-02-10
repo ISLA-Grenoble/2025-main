@@ -85,5 +85,5 @@ Using the estimated parameters, we can predict that for a given arbitrary value 
 \begin{enumerate}
 \item[(c)] Show that 
 $$\mathbb{E}\Big[\hat{m}(x)\Big] = \beta_0 + \beta_1 x$$
-\item[(d)] Show that $$\text{Var}\Big(\hat{m}(x)\Big) = \dfrac{\sigma^2}{N}\left(1 + \dfrac{(x - \bar{X})^2}{s_X^2}\right)$$Describe how the variance changes for different choices of the operation point.
+\item[(d)] Show that the variance of $\hat{m}(x)$ conditioned on a given choice of datapoints $x_1, \dots, x_N$ can be written as per$$\text{Var}_X\Big(\hat{m}(x)\Big) = \dfrac{\sigma^2}{N}\left(1 + \dfrac{(x - \bar{X})^2}{s_X^2}\right)$$Describe how the variance changes for different choices of the operation point.
 \end{enumerate}

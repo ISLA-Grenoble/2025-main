@@ -30,9 +30,12 @@ The (initial) plan for the topics of each of our classes is the following:
   - CM3: Cross-validation, model selection, bias-variance tradeoff
   - TP1: Regression -- **Deadline 09-March at 23h59**
 
-- **Week 4 (24-February 2025)**
+- **Week 4.1 (24-February 2025)**
   - CM4: Principal component analysis
   - TD2: Exercises on linear regression and PCA
+
+- **Week 4.2 (24-February 2025, 17-18h30)**
+  - TD3: Some questions from previous exams
 
 - **Week 5 (10-March 2025)**
   - CM5: Linear classification — Discriminative approach
@@ -52,17 +55,17 @@ The (initial) plan for the topics of each of our classes is the following:
 
 - **Week 9.1 (07-April 2025)**
   - CM9: ML competitions, metrics, etc.
-  - TD3: Gradient boosting
+  - TD4: Gradient boosting
 
 - **Week 9.2 (11-April 2025, 17-18h30)**
   - CM10: Introduction to network analysis
 
 - **Week 10.1 (14-April 2025)**
   - CM11: Community detection in graphs
-  - TD4: Some questions from previous exams
+  - TD5: Some questions from previous exams
 
 - **Week 10.2 (18-April 2025, 17-18h30)**
-  - TD5: Some questions from previous exams
+  - TD6: Some questions from previous exams
 
 ### Textbooks
 - Our course has an official booklet available [here](https://cloud.univ-grenoble-alpes.fr/s/iTtXPTdLpyMwBtN).
@@ -86,7 +89,6 @@ Here below we show you one way of setting up a `conda` environment so that you'r
 
 1) First of all, you should install `conda ` in your computer as detailed [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html).
 2) Run `conda create -n isla2025 python=3.11` on your terminal.
-   - Be sure to set the version 3.11 for Python! (not later, not older). This will be important to avoid some known compatibilities.
 3) Run `pip install -r requirements.txt` on your terminal.
 
 You should be all set to start working on the TPs. If this is not the case, please make an [issue](https://github.com/ISLA-Grenoble/2025-main/issues) on this repository detailing your problem so that I can either fix it or at least help you out.
