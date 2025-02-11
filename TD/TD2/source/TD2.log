@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.11.24)  22 JAN 2025 21:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.11.24)  11 FEB 2025 12:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -660,63 +660,49 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 333.
+(Font)              <10.95> on input line 334.
+[1
+
+{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 414.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 393.
 LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
-414.
+401.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/ts1lmtt.fd
 File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [1
-
-{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-<TD2_files/figure-latex/unnamed-chunk-4-1.pdf, id=35, 867.24pt x 397.485pt>
-File: TD2_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (type pdf)
-<use TD2_files/figure-latex/unnamed-chunk-4-1.pdf>
-Package pdftex.def Info: TD2_files/figure-latex/unnamed-chunk-4-1.pdf  used on 
-input line 496.
-(pdftex.def)             Requested size: 512.17003pt x 234.74458pt.
-[3 <./TD2_files/figure-latex/unnamed-chunk-4-1.pdf>]
-<TD2_files/figure-latex/unnamed-chunk-6-3.pdf, id=111, 867.24pt x 397.485pt>
-File: TD2_files/figure-latex/unnamed-chunk-6-3.pdf Graphic file (type pdf)
-<use TD2_files/figure-latex/unnamed-chunk-6-3.pdf>
-Package pdftex.def Info: TD2_files/figure-latex/unnamed-chunk-6-3.pdf  used on 
-input line 536.
-(pdftex.def)             Requested size: 512.17003pt x 234.74458pt.
-[4 <./TD2_files/figure-latex/unnamed-chunk-6-3.pdf>] (./TD2.aux) ) 
+) [2] [3] (./TD2.aux) ) 
 Here is how much of TeX's memory you used:
- 15837 strings out of 478994
- 240369 string characters out of 5858183
- 607888 words of memory out of 5000000
- 32959 multiletter control sequences out of 15000+600000
- 459930 words of font info for 110 fonts, out of 8000000 for 9000
+ 15827 strings out of 478994
+ 239702 string characters out of 5858183
+ 606831 words of memory out of 5000000
+ 32941 multiletter control sequences out of 15000+600000
+ 460410 words of font info for 116 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,8n,77p,556b,492s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/t
-exlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local/texlive/2021/t
-exmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2021/texmf-dist/font
-s/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvip
-s/lm/lm-rm.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathex
-.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr
-/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/tex
-live/2021/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2021/
-texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2021/texmf-dis
-t/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2021/texmf-dist/fonts/ty
-pe1/public/lm/lmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public
-/lm/lmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmib10
-.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/
-local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texli
-ve/2021/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2021/texm
-f-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2021/texmf-dist/fon
-ts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/p
-ublic/lm/lmtt10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/l
-mtti10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symb
-ols/msam10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/
-symbols/msbm10.pfb>
-Output written on TD2.pdf (4 pages, 297447 bytes).
+ 71i,8n,77p,578b,445s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/l
+m-ts1.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/us
+r/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/te
+xlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2021
+/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2021/texmf-dist/fo
+nts/enc/dvips/lm/lm-mathex.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/
+public/lm/lmbx10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/
+lmbx12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmcsc10.pf
+b></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/lo
+cal/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texliv
+e/2021/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2021/texm
+f-dist/fonts/type1/public/lm/lmmib10.pfb></usr/local/texlive/2021/texmf-dist/fo
+nts/type1/public/lm/lmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/p
+ublic/lm/lmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lm
+r8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></u
+sr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/te
+xlive/2021/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2021
+/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2021/texmf-dis
+t/fonts/type1/public/lm/lmtti10.pfb></usr/local/texlive/2021/texmf-dist/fonts/t
+ype1/public/amsfonts/symbols/msam10.pfb>
+Output written on TD2.pdf (3 pages, 247089 bytes).
 PDF statistics:
- 222 PDF objects out of 1000 (max. 8388607)
- 93 compressed objects within 1 object stream
- 10 named destinations out of 1000 (max. 500000)
- 30731 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 102 PDF objects out of 1000 (max. 8388607)
+ 80 compressed objects within 1 object stream
+ 9 named destinations out of 1000 (max. 500000)
+ 30721 words of extra memory for PDF output out of 35830 (max. 10000000)
 
