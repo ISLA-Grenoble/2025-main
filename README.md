@@ -14,7 +14,7 @@ so you should be checking this page regularly for updates.
 We will meet on Mondays from 15h30 to 18h30. Each time we will have a 1h30 CM 
 and a 1h30 TD or TP session. 
 
-We will be doing a total of 11 CM, 8 TP sessions, and 4 TD sessions.
+We will be doing a total of 11 CM, 6 TP sessions, and 6 TD sessions.
 
 The (initial) plan for the topics of each of our classes is the following:
 
@@ -26,16 +26,16 @@ The (initial) plan for the topics of each of our classes is the following:
   - CM2: Multiple linear regression
   - TP1: Regression
 
-- **Week 3 (17-February 2025)**
+- **Week 3.1 (17-February 2025)**
   - CM3: Cross-validation, model selection, bias-variance tradeoff
   - TP1: Regression -- **Deadline 09-March at 23h59**
 
-- **Week 4.1 (24-February 2025)**
-  - CM4: Principal component analysis
-  - TD2: Exercises on linear regression and PCA
+- **Week 3.2 (21-February 2025, 17-18h30)**
+  - TD2: Some questions from previous exams
 
-- **Week 4.2 (24-February 2025, 17-18h30)**
-  - TD3: Some questions from previous exams
+- **Week 4 (24-February 2025)**
+  - CM4: Principal component analysis
+  - TD3: Exercises on linear regression and PCA
 
 - **Week 5 (10-March 2025)**
   - CM5: Linear classification — Discriminative approach
@@ -88,7 +88,7 @@ The final exam will be a 3h practical evaluation on the computers from ENSIMAG. 
 Here below we show you one way of setting up a `conda` environment so that you're sure of being able to run all the packages necessary for our class.
 
 1) First of all, you should install `conda ` in your computer as detailed [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html).
-2) Run `conda create -n isla2025 python=3.11` on your terminal.
+2) Run `conda create -n isla2025` on your terminal.
 3) Run `pip install -r requirements.txt` on your terminal.
 
 You should be all set to start working on the TPs. If this is not the case, please make an [issue](https://github.com/ISLA-Grenoble/2025-main/issues) on this repository detailing your problem so that I can either fix it or at least help you out.

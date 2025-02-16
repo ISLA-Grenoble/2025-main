@@ -41,7 +41,7 @@ Assume that our data points $(x_i, y_i)$ are $\{(-2, 1), (-1, 3), (0, 2), (3, 4)
 \end{itemize}
 
 \section*{$\blacktriangleright$~Exercise 2 (credits to Berkeley CS-189)}
-In the following statements, the word "bias" is referring to the bias-variance decomposition.
+In the following statements, the word "bias" is referring to the bias-variance decomposition. Which one of them is true?
 \begin{itemize}
 \item[(A)] A model trained with $N$ training points is likely to have lower variance than a model trained with $2N$ training points.
 \item[(B)] If my model is underfitting, it is more likely to have high bias than high variance.
