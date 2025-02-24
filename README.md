@@ -33,9 +33,12 @@ The (initial) plan for the topics of each of our classes is the following:
 - **Week 3.2 (21-February 2025, 17-18h30)**
   - TD2: Some questions from previous exams
 
-- **Week 4 (24-February 2025)**
+- **Week 4.1 (24-February 2025)**
   - CM4: Principal component analysis
   - TD3: Exercises on linear regression and PCA
+
+- **Week 4.2 (only Pedro's group : 28-February 2025, 17-18h30)**
+  - TD4: Some questions from previous exams + Help with TP1
 
 - **Week 5 (10-March 2025)**
   - CM5: Linear classification — Discriminative approach
@@ -55,17 +58,17 @@ The (initial) plan for the topics of each of our classes is the following:
 
 - **Week 9.1 (07-April 2025)**
   - CM9: ML competitions, metrics, etc.
-  - TD4: Gradient boosting
+  - TD5: Gradient boosting
 
 - **Week 9.2 (11-April 2025, 17-18h30)**
   - CM10: Introduction to network analysis
 
 - **Week 10.1 (14-April 2025)**
   - CM11: Community detection in graphs
-  - TD5: Some questions from previous exams
-
-- **Week 10.2 (18-April 2025, 17-18h30)**
   - TD6: Some questions from previous exams
+
+- **Week 10.2 (only Alexandre's group : 18-April 2025, 17-18h30)**
+  - TD7: Some questions from previous exams
 
 ### Textbooks
 - Our course has an official booklet available [here](https://cloud.univ-grenoble-alpes.fr/s/iTtXPTdLpyMwBtN).
