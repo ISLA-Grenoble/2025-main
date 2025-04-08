@@ -184,7 +184,7 @@ f_1 &=& \underset{h \in \mathbb{H}}{\text{argmin}}~\displaystyle-\sum_{i = 1}^{N
 &=& \underset{h \in \mathbb{H}}{\text{argmin}}~-\displaystyle\sum_{i = 1}^{N}y_ih(\mathbf{x}_i)\dfrac{\exp\Big(-y_i f_0(\mathbf{x}_i)\Big)}{Z} \\[1em]
 \end{array}
 $$
-where $Z = \displaystyle\sum_{i = 1}^N \exp\Big(-y_i f_0(\mathbf{x}_i)\Big)$ is a normalization constant.
+where $Z = \displaystyle\sum_{j = 1}^N \exp\Big(-y_j f_0(\mathbf{x}_j)\Big)$ is a normalization constant.
 
 We can pursue things and write
 $$
@@ -197,7 +197,7 @@ Note that $y_i h(\mathbf{x}_i) \in \{-1, +1\}$ with $y_i h(\mathbf{x}_i) = 1 \if
 Therefore, we can rewrite things to get
 $$
 \begin{array}{rcl}
-f_1 &=& \underset{h \in \mathbb{H}}{\text{argmin}}~\displaystyle \sum_{y_i = h(\mathbf{x}_i)}w_i - \sum_{y_i \neq h(\mathbf{x}_i)}w_i\\[1em]
+f_1 &=& \underset{h \in \mathbb{H}}{\text{argmin}}~\displaystyle \sum_{y_i \neq h(\mathbf{x}_i)}w_i - \sum_{y_i = h(\mathbf{x}_i)}w_i\\[1em]
 \end{array}
 $$
 but since $w_i$ sums to one over the $N$ datapoints, we can rewrite 
@@ -207,7 +207,7 @@ $$
 and obtain
 $$
 \begin{array}{rcl}
-f_1 &=& \underset{h \in \mathbb{H}}{\text{argmin}}~\displaystyle -\Bigg(1  - 2\sum_{y_i \neq h(\mathbf{x}_i)}w_i\Bigg)\\[1em]
+f_1 &=& \underset{h \in \mathbb{H}}{\text{argmin}}~\displaystyle 2\sum_{y_i \neq h(\mathbf{x}_i)}w_i - 1\\[1em]
 &=& \underset{h \in \mathbb{H}}{\text{argmin}}~\displaystyle \sum_{y_i \neq h(\mathbf{x}_i)}w_i\\[1em]
 &=& \underset{h \in \mathbb{H}}{\text{argmin}}~\displaystyle \sum_{i = 1}^N\mathbf{1}\big(y_i \neq h(\mathbf{x}_i)\big)w_i
 \end{array}
