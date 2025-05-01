@@ -4,9 +4,9 @@
 
 ### About the final exam
 
-The final exam will happen on **Friday 09-May at 8am**. It will be a 3h practical evaluation on the computers from ENSIMAG. It will have some multiple-choice questions to evaluate your theoretical knowledge and some practical questions similar to what you will do in the TPs. You will not have access to any internet connections, but you can bring your own handwritten and printed notes. In the computer that you will use, we will provide you a folder with the instructions for the exam, the `ipynb` files to fill with your answers and code, as well some materials of the course.
+The final exam will happen on **Friday 09-May at 8am**. It will be a 3h practical evaluation on the computers from ENSIMAG. It will have some multiple-choice questions to evaluate your theoretical knowledge and some practical questions similar to what you will do in the TPs. You will not have access to any internet connections, except to `sklearn` documentation at https://scikit-learn.org/stable/. You can bring your own handwritten and printed notes. In the computer that you will use, we will provide you a folder with the instructions for the exam, the `ipynb` files to fill with your answers and code, as well all the slides of the course.
 
-You are all expected to have read the scientific article : 
+You are all expected to have read the following scientific article (which will be available in the exam folder) and to be able to answer questions about it: 
 
 > Mark Newman  "Modularity and community structure in networks"
 > https://arxiv.org/abs/physics/0602124
