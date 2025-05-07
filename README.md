@@ -1,4 +1,4 @@
-# Introduction to statistical learning and applications 2024
+# Introduction to statistical learning and applications 2025
 
 --- 
 
